@@ -22,4 +22,24 @@ let obj2 = {4:"Four", 5:"Five", 6: "Six"}
 // console.log(Object.values(obj1)) //returns a array of values
 // console.log(Object.entries(obj1)) //returns a array of array of each pair
 
-console.log(obj2.hasOwnProperty(5))
+// console.log(obj2.hasOwnProperty(5))
+
+let course = {
+    courceName : "Chai aur react",
+    price : "999",
+    instructor : "Hitesh"
+}
+
+
+
+// let {courceName, price, instructor} = course //This is called destructing
+// console.log(instructor)     
+// console.log(price)
+// console.log(courceName)
+
+
+let {courceName : name} = course // we can assign our own variables
+// console.log(name)
+
+
+
