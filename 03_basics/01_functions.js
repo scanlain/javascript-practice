@@ -25,4 +25,30 @@ function userMessage(message = "valid message"){
     return `${message} has been sent`
 }
 
-console.log(userMessage());
+// console.log(userMessage());
+
+function printNum(...nums){
+    return nums;
+}
+
+// console.log(printNum(200, 300, 400))
+
+let user = {
+    name : "scanlain",
+    price : 2300
+}
+
+let length = 10
+
+function printObj(myObj, length){
+    myObj.name = "tony stark"
+    length = 20
+}
+
+printObj(user)
+console.log(user.name)
+console.log(length)
+
+// console.log(printObj({
+//     name : "tony stark"
+// }))
