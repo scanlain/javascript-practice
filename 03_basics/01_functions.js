@@ -46,8 +46,8 @@ function printObj(myObj, length){
 }
 
 printObj(user)
-console.log(user.name)
-console.log(length)
+// console.log(user.name)
+// console.log(length)
 
 // console.log(printObj({
 //     name : "tony stark"
