@@ -62,19 +62,19 @@ undefined => false
 
 let some = 23
 let st1 = String(some)
-console.log(st1) //23 but type is string
+// console.log(st1) //23 but type is string
 
 let a = true
 let st2 = String(a)
-console.log(st2) //true
+// console.log(st2) //true
 
 let a1 = null
 let st3 = String(a1)
-console.log(st3) //true
+// console.log(st3) //true
 
 let a2 = undefined
 let st4 = String(a2)
-console.log(st4) //undefined
+// console.log(st4) //undefined
 
 //When we use String() for conversion
 /*
@@ -83,3 +83,24 @@ console.log(st4) //undefined
  null => null
  undefined => undefined
 */
+
+// console.log(2**4);
+
+let str1 = "valorant"
+let str2 = "omen"
+let str3 = str1 + str2
+// console.log(str3)
+// console.log("1" + 2) //12
+// console.log(1 + "2") //12
+// console.log("1" + 2 + 2) //122
+// console.log(1 + 2 + "2")
+
+// console.log(+true) //1
+// console.log(+"") //0
+// console.log(+"gta5") //NaN
+//+ converts into numeric but not recommended
+
+// let num1,num2, num3
+// num1 = num2 = num3 = 40
+// console.log(num1, num2, num3)
+
