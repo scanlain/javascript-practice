@@ -34,6 +34,25 @@ const returnObj = () => ({name:"shelby", age:24, city:"gotham"})
 
 //In arrow functions while returning any value if we use {} then we must write return keyword , but we use () or just write simple statement then dont need to write return
 
+
+/*
+The reason of this is not working inside an arrow function is that this inside an arrow function refers to its outer context and here its outer context is global which is empty. But when we write an arrow func inside another function the this will point to the context of outer function. Also arrow function donot have their own this that's why they inherit from its surrounding
+*/
+
+function inner(){
+    let user = "tommy"
+    console.log(this)
+    
+    const outer = () => {
+        let name = "shelby"
+        console.log(this)
+    }
+    
+    outer()
+}
+
+inner()
+
 const way1 = (n1, n2) => {
     return n1 + n2
 }
